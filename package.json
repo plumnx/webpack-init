@@ -6,15 +6,27 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
-    "server": "webpack-dev-server --open"
+    "server": "webpack-dev-server --open",
+    "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.7.6",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-react-transform": "^3.0.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
+    "postcss-loader": "^3.0.0",
+    "react-transform-hmr": "^1.0.4",
+    "style-loader": "^1.1.4",
     "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
